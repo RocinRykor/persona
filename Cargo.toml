@@ -1,0 +1,24 @@
+[package]
+name        = "persona"
+version     = "0.1.0"
+edition.workspace     = true
+authors.workspace     = true
+license     = "AGPL-3.0"
+repository  = "https://github.com/RocinRykor/persona"
+
+[lib]
+name = "persona"
+path = "src/lib.rs"
+
+[[bin]]
+name = "persona"
+path = "src/main.rs"
+
+[dependencies]
+cortex     = { workspace = true }
+commlink   = { workspace = true }
+archives   = { workspace = true }
+tokio      = { workspace = true }
+serde      = { workspace = true }
+serde_json = { workspace = true }
+tracing    = { workspace = true }
